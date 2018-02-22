@@ -13,3 +13,7 @@ function increaseRankBy(n) {
   }
   return ul
 }
+
+function deepestChild() {
+  return document.querySelector('#grand-node div div div div')
+}
