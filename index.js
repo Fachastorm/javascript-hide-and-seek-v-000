@@ -5,3 +5,11 @@ function getFirstSelector(selector) {
 function nestedTarget() {
   return document.querySelector('#nested .target')
 }
+
+function increaseRankBy(n) {
+  var ul = document.querySelectorAll('ul.ranked_list li')
+  for (let i = 0; i < ul.length; i++) {
+    ul[i].textContent = parseInt(ul[i].textContent) + n
+  }
+  return ul
+}
